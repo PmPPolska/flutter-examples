@@ -1,0 +1,28 @@
+## JS
+<script type="text/javascript" src="https://cdn.statuspage.io/se-v2.js"></script>
+<script>
+  var sp = new StatusPage.page({ page : 'yh6f0r4529hb' });
+  sp.status({
+    success : function(data) {
+      console.log(data.status.indicator);
+    }
+  });
+</script>
+
+## using cURL
+curl https://www.cloudflarestatus.com/api/v2/status.json
+            
+Response
+{
+  "page":{
+    "id":"yh6f0r4529hb",
+    "name":"Cloudflare",
+    "url":"https://www.cloudflarestatus.com",
+    "updated_at": "2023-11-19T18:40:44Z"
+  },
+  "status": {
+    "description": "Partial System Outage",
+    "indicator": "major"
+  }
+}
+          
